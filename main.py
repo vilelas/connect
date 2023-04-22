@@ -53,7 +53,7 @@ def main():
         
         grafo.kruskal_mst()
         grafo.ver_mst()
-
+        matriz.clear()
         # Plota o gráfico
         # desenha_grafo(escolha.upper(), edges, len(matriz), weights, vertices)
         
