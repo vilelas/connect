@@ -1,7 +1,7 @@
-from dados.baixar_dados import download_dados
-from matrizes.criar_matriz import criar_matriz
 from algoritmo.kruskal import Grafo
-# from desenhar.desenha_grafo import desenha_grafo
+from auxiliares.baixar_dados import download_dados
+from auxiliares.criar_matriz import criar_matriz
+# from auxiliares.desenha_grafo import desenha_grafo
 
 def menu() -> str:
     opcoes = {
@@ -53,9 +53,10 @@ def main():
         
         grafo.kruskal_mst()
         grafo.ver_mst()
-        matriz.clear()
+        
         # Plota o gráfico
         # desenha_grafo(escolha.upper(), edges, len(matriz), weights, vertices)
+        matriz.clear()
         
         escolha = menu()
 
